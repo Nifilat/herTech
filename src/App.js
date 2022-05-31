@@ -7,6 +7,8 @@ import Forgotpassword from "./pages/Forgotpassword";
 import Home from "./pages/Home";
 import Navbar from "./component/Navbar";
 
+// images
+
 function App() {
   return (
     <div className="w-full h-screen bg-gray-200">
