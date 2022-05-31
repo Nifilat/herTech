@@ -14,8 +14,13 @@ export default function Signup() {
       <h3 className='text-black text-2xl font-bold text-center'>HerTech</h3>
       <p className='text-black text-sm font-medium text-center mt-1.5'>You're 1-click away from creating an account</p>
 
-      <input type="email" placeholder='email address' className='w-full h-10 rounded-lg border-2 border-gray-300 px-6 mt-4' />
-      <input type="password" placeholder='password' className='w-full h-10 rounded-lg border-2 border-gray-300 px-6 mt-4'  />
+      <input type="email" placeholder='email address' className='w-full h-10 rounded-lg border-2 border-gray-300 px-3.5 mt-4' />
+      <div>
+      <input type="password" placeholder='password' className='w-full h-10 rounded-lg border-2 border-gray-300 px-3.5 mt-4'  />
+      <p className='absolute text-right font-medium text-xs left-[700px] top-[326px] text-gray-400'>Show</p> 
+
+      </div>
+      
 
       <button className='w-full h-10 rounded-lg bg-black text-white font-bold text-md mt-5'>Create account</button>
       <p className=' text-center mt-4 font-medium text-base text-gray-600'>OR</p>
