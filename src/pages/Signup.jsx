@@ -1,15 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { useLinkedIn } from 'react-linkedin-login-oauth2';
 
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import pic from '../images/Group 1.png'
 
 // firebase 
-import { signInWithGoogle } from '../firebaseconfig'
+import {app} from '../firebaseconfig'
+
+// import { signInWithGoogle } from '../firebaseconfig'
 
 
-import { getAuth, createUserWithEmailAndPassword} from 'firebase/auth'
+import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup} from 'firebase/auth'
 
 export default function Signin() {
   const [email, setEmail] = React.useState('');
@@ -26,12 +29,50 @@ export default function Signin() {
     setLoading(true); 
     const authentication = getAuth();
     const details = await createUserWithEmailAndPassword(authentication, email, password);
+    nav('/')
     console.log(details.user);
     setLoading(false);
     } catch (error) {
       alert(error.message);
     }
   }
+
+  const auth = getAuth(app);
+
+  const provider = new GoogleAuthProvider();
+
+  const signInWithGoogle = () => {
+    signInWithPopup(auth, provider)
+    .then((result) => {
+      console.log(result);
+      nav('/')
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
+
+
+  const {linkedInLogin}  = useLinkedIn({
+    clientId: '86df6ewln0l3vt',
+    redirectUri: 'http://localhost:3000', 
+    // URLENCODE(redirectUri) : https%3A%2F%2Fsymphonious-kringle-53d6c6.netlify.app
+    onSuccess: (code) => {
+      console.log(code);
+      
+    },
+    onError: (error) => {
+      console.log(error);
+    },
+  });
+
+
+
+
+
+  const nav = useNavigate();
+
+  
 
   
 
@@ -54,8 +95,8 @@ export default function Signin() {
             </button>
       <p className=' text-center mt-4 font-medium text-base text-gray-600'>OR</p>
       
-      <button onClick={signInWithGoogle} className='w-full h-10 rounded-lg bg-gray-300 text-black font-normal text-base mt-4 flex justify-center items-center gap-1'><img src= {pic} alt="Google" className='w-4'/><span>Continue with Google</span></button>
-      <button className='w-full h-10 rounded-lg bg-gray-300 text-black font-normal text-base mt-4'><FontAwesomeIcon icon={faLinkedin}  className = "text-[#2D6EAE]"></FontAwesomeIcon> Continue with LinkedIn</button>
+      <button onClick={signInWithGoogle}  className='w-full h-10 rounded-lg bg-gray-300 text-black font-normal text-base mt-4 flex justify-center items-center gap-1'><img src= {pic} alt="Google" className='w-4'/><span>Continue with Google</span></button>
+      <button onClick={linkedInLogin} className='w-full h-10 rounded-lg bg-gray-300 text-black font-normal text-base mt-4'><FontAwesomeIcon icon={faLinkedin}  className = "text-[#2D6EAE]"></FontAwesomeIcon> Continue with LinkedIn</button>
       <p className='text-center mt-4 text-gray-700 font-medium'>Already have an account? <Link to='/login'><span className='font-bold text-black'>Login</span></Link></p>
     </div>
     </div>

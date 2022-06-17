@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 // firebase 
 
@@ -23,11 +23,15 @@ export default function Login() {
     const details = await signInWithEmailAndPassword(authentication, email, password);
     console.log(details.user);
     setUserEmail(details.user.email);
+    nav('/')
     setLoading(false);
     } catch (error) {
       alert(error.message);
     }
   }
+
+  const nav = useNavigate();
+  
 
   return (
     <div className='w-full h-auto flex justify-center items-center bg-gray-200'>
