@@ -1,7 +1,7 @@
 import React from "react";
 import JobCard from "./JobCard";
 import { Jobs } from "./data";
-import Image from "../images/Group 1.png";
+
 import Fade from "../images/Rectangle 19011 (1).png";
 function Job() {
     return (
@@ -34,8 +34,8 @@ function Job() {
                 <div className="location">
                     <select name="location" id="location" className="card">
                         <option value="">Location</option>
-                        <option value="ns">Nassarawa</option>
-                        <option value="eb">Ebonyi</option>
+                        <option value="ns">Australia</option>
+                        <option value="eb">Nigeria</option>
                         <option value="as">Asaba</option>
                         <option value="ab">Abakaliki</option>
                     </select>
@@ -43,17 +43,18 @@ function Job() {
                 <div className="job-type">
                     <select name="job-type" id="job-type" className="card">
                         <option value="">Job type</option>
-                        <option value="gm">Gateman</option>
-                        <option value="sh">Shoe maker</option>
-                        <option value="bb">Bad Belle</option>
-                        <option value="ab">Aboki</option>
-                        <option value="th">Thief</option>
+                        <option value="gm">Data Scientist</option>
+                        <option value="sh">Software Developer</option>
+                        <option value="bb">Information Security Analyst.</option>
+                        <option value="ab">Computer Systems Analyst.</option>
+                        <option value="th">Web Developer</option>
                     </select>
                 </div>
             </div>
             <div className="jobs-list flex flex-col gap-6 max-h-[750px] relative overflow-hidden">
                 {Jobs.map((job) => (
-                    <JobCard key={job.id} Image={Image} {...job} />
+                    <JobCard key={job.id} {...job} />
+                    
                 ))}
             </div>
             <img src={Fade} alt="fade" className="absolute bottom-0 left-0 w-full" />
