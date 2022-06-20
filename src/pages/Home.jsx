@@ -1,6 +1,6 @@
 import Communities from "./Communities";
 import Companies from "./Companies";
-import Footer from "./Footer";
+import Footer from "../component/Footer";
 import Hero from "./Hero";
 import Job from "./Job";
 import Podcasts from "./Podcasts";
