@@ -3,7 +3,7 @@ import Hero_image from "../images/Hero_img.png";
 
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
-import Companies from "./Companies";
+// import Companies from "./Companies";
 
 const commonStyles = {
     bgcolor: "#D9D9D9",
@@ -14,7 +14,7 @@ const commonStyles = {
 
 function Hero() {
     return (
-        <div className="bg-[#101225] pt-[155px]">
+        <div className="bg-[#101225] pt-[70px]">
             <div className="w-full min-h-screen  flex lg:flex-row flex-col items-start lg:justify-between container md:p-20 p-5 ">
                 <div className="flex flex-col gap-5 max-w-lg lg:order-1 order-2 ">
                     <h1 className="text-white font-bold lg:text-7xl text-4xl ">
