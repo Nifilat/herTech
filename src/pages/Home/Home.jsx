@@ -1,9 +1,9 @@
-import Communities from "./Communities";
 import Companies from "./Companies";
 import Footer from "./Footer";
 import Hero from "./Hero";
-import Job from "./Job";
-import Podcasts from "./Podcasts";
+import Communities from "./Section/Communities";
+import Job from "./Section/Job";
+import Podcasts from "./Section/Podcasts";
 
 export default function Home() {
     return (

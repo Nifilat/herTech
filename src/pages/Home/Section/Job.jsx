@@ -1,8 +1,7 @@
 import React from "react";
-import JobCard from "./JobCard";
-import { Jobs } from "./data";
-import Image from "../images/Group 1.png";
-import Fade from "../images/Rectangle 19011 (1).png";
+import JobCard from "component/JobCard";
+import { Jobs } from "../../data";
+import Fade from "images/Rectangle 19011 (1).png";
 function Job() {
     return (
         <div className="section-card w-full lg:w-7/12 relative overflow-hidden">
@@ -51,13 +50,13 @@ function Job() {
                     </select>
                 </div>
             </div>
-            <div className="jobs-list flex flex-col gap-6 max-h-[750px] relative overflow-hidden">
+            <div className="jobs-list flex flex-col gap-6 max-h-[750px] relative overflow-auto scroll">
                 {Jobs.map((job) => (
-                    <JobCard key={job.id} Image={Image} {...job} />
+                    <JobCard key={job.id} {...job} />
                 ))}
             </div>
             <img src={Fade} alt="fade" className="absolute bottom-0 left-0 w-full" />
-            <button className="flex items-center text-white rounded-full font-semibold text-sm bg-[#3754DB] gap-2.5 px-6 py-4 absolute bottom-[30px] left-1/2 -translate-x-1/2">
+            <button className="flex items-center text-white rounded-full font-semibold text-sm bg-[#3754DB] gap-2.5 px-6 py-4 absolute bottom-[30px] left-1/2 -translate-x-1/2 w-fit">
                 <span>View all jobs</span>
                 <svg
                     width="8"

@@ -3,8 +3,8 @@ import { FiBriefcase, FiDollarSign, FiMapPin } from "react-icons/fi";
 function JobCard({ Image, title, company, location, mode, status, salary, timePast }) {
     return (
         <div className="card flex p-3 lg:p-5 flex-col lg:flex-row gap-3">
-            <div className="p-3 border border-gray-200 rounded-md mr-2 w-fit">
-                <img src={Image} alt="Icon" className="w-14 h-14 object-cover object-center" />
+            <div className="p-2 border border-gray-200 rounded-md mr-2 w-20 h-20 grid place-items-center">
+                <img src={Image} alt="Icon" className="w-full object-cover object-center" />
             </div>
             <div>
                 <h3 className="font-medium text-lg mb-1">{title}</h3>

@@ -1,6 +1,6 @@
 import React from "react";
-import { PodcastsList } from "./data";
-import PodcastCard from "./PodcastCard";
+import { PodcastsList } from "../../data";
+import PodcastCard from "component/PodcastCard";
 
 function Podcasts() {
     return (

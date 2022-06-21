@@ -48,3 +48,12 @@ code {
 .swiper-slide {
     width: auto !important;
 }
+
+.jobs-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.jobs-list::-webkit-scrollbar-thumb {
+    border-radius: 9999px;
+    background-color: #999fa780;
+}

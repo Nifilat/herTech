@@ -1,6 +1,6 @@
 import React from "react";
-import ComunityCard from "./ComunityCard";
-import { CommunityChannels } from "./data";
+import ComunityCard from "component/ComunityCard";
+import { CommunityChannels } from "../../data";
 function Communities() {
     return (
         <div className="section-card w-full">

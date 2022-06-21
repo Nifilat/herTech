@@ -1,8 +1,11 @@
-import { Avatar } from "@mui/material";
+import Facebook from "images/Facebook.svg";
+import Star from "images/Star.svg";
+import LinkedIn from "images/linkedin.svg";
 
 export const Jobs = [
     {
         id: 0,
+        Image: Facebook,
         title: "Product Manager—Remote",
         company: "Meta",
         location: "USA",
@@ -13,6 +16,7 @@ export const Jobs = [
     },
     {
         id: 1,
+        Image: Star,
         title: "Data Analytics",
         company: "Loom Inc.",
         location: "Australia",
@@ -23,6 +27,7 @@ export const Jobs = [
     },
     {
         id: 2,
+        Image: LinkedIn,
         title: "Data Analytics",
         company: "Loom Inc.",
         location: "Australia",
@@ -33,6 +38,7 @@ export const Jobs = [
     },
     {
         id: 3,
+        Image: Star,
         title: "Data Analytics",
         company: "Loom Inc.",
         location: "Australia",
@@ -43,6 +49,7 @@ export const Jobs = [
     },
     {
         id: 4,
+        Image: Star,
         title: "Data Analytics",
         company: "Loom Inc.",
         location: "Australia",
@@ -53,6 +60,7 @@ export const Jobs = [
     },
     {
         id: 5,
+        Image: Star,
         title: "Data Analytics",
         company: "Loom Inc.",
         location: "Australia",

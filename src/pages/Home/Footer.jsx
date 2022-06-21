@@ -12,7 +12,7 @@ function Footer() {
                         </p>
                     </div>
                     <div className="flex justify-between gap-5 rounded-full border border-gray-200 flex-grow max-w-md p-1.5 pl-6">
-                        <div className="flex gap-2 items-center">
+                        <div className="flex gap-2 items-center w-full">
                             <svg
                                 width="16"
                                 height="16"
