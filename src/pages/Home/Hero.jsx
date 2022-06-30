@@ -1,5 +1,5 @@
 import React from "react";
-import Hero_image from "../images/Hero_img.png";
+import Hero_image from "../../images/Hero_img.png";
 
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";

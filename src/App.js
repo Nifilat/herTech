@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Forgotpassword from "./pages/Forgotpassword";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Navbar from "./component/Navbar";
 import * as React from "react";
 import { LinkedInCallback } from "react-linkedin-login-oauth2";

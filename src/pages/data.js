@@ -1,10 +1,11 @@
-import Meta from "../images/Meta_Logo.png";
-import Loom from "../images/Loom_Logo.svg";
-import LiIn from "../images/LinkedIn_Logo.png";
+import Facebook from "../images/Meta_Logo.png";
+import Star from "../images/Loom_Logo.svg";
+import LinkedIn from "../images/linkedin.svg";
 
 export const Jobs = [
   {
     id: 0,
+    Image: Facebook,
     title: "Product Manager—Remote",
     company: "Meta",
     location: "USA",
@@ -12,10 +13,10 @@ export const Jobs = [
     status: "Full-time",
     salary: "120k - 130k",
     timePast: "5mins ago",
-    Image: Meta,
   },
   {
     id: 1,
+    Image: Star,
     title: "Data Analytics",
     company: "Loom Inc.",
     location: "Australia",
@@ -23,10 +24,10 @@ export const Jobs = [
     status: "Full-time",
     salary: "120k - 130k",
     timePast: "18hrs ago",
-    Image: Loom,
   },
   {
     id: 2,
+    Image: LinkedIn,
     title: "Data Analytics",
     company: "Loom Inc.",
     location: "Australia",
@@ -34,10 +35,10 @@ export const Jobs = [
     status: "Full-time",
     salary: "120k - 130k",
     timePast: "18hrs ago",
-    image: LiIn,
   },
   {
     id: 3,
+    Image: Star,
     title: "Data Analytics",
     company: "Loom Inc.",
     location: "Australia",
@@ -45,10 +46,10 @@ export const Jobs = [
     status: "Full-time",
     salary: "120k - 130k",
     timePast: "18hrs ago",
-    Image: Loom,
   },
   {
     id: 4,
+    Image: Star,
     title: "Data Analytics",
     company: "Loom Inc.",
     location: "Australia",
@@ -56,10 +57,10 @@ export const Jobs = [
     status: "Full-time",
     salary: "120k - 130k",
     timePast: "18hrs ago",
-    Image: Loom,
   },
   {
     id: 5,
+    Image: Star,
     title: "Data Analytics",
     company: "Loom Inc.",
     location: "Australia",
@@ -67,7 +68,6 @@ export const Jobs = [
     status: "Full-time",
     salary: "120k - 130k",
     timePast: "18hrs ago",
-    Image: Meta,
   },
 ];
 

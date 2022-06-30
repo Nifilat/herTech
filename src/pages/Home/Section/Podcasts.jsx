@@ -1,12 +1,13 @@
 import React from "react";
-import ComunityCard from "./ComunityCard";
-import { CommunityChannels } from "./data";
-function Communities() {
+import { PodcastsList } from "../../data";
+import PodcastCard from "../../../component/PodcastCard";
+
+function Podcasts() {
     return (
-        <div className="section-card w-full">
+        <div className="section-card w-full h-full">
             <div className="flex items-start justify-between flex-wrap">
                 <div>
-                    <h2>Online communities</h2>
+                    <h2>Podcast</h2>
                     <p className="!mb-2">Lorem ipsum is placeholder text common</p>
                 </div>
                 <button className="flex items-center rounded-full font-semibold text-[#3754DB] border border-[#3754DB] gap-1.5 p-2 px-4">
@@ -27,13 +28,11 @@ function Communities() {
                     </svg>
                 </button>
             </div>
-            <div className="channel-list">
-                {CommunityChannels.map((community) => (
-                    <ComunityCard key={community.id} {...community} />
-                ))}
-            </div>
+            {PodcastsList.map((pod) => (
+                <PodcastCard key={pod.id} {...pod} />
+            ))}
         </div>
     );
 }
 
-export default Communities;
+export default Podcasts;

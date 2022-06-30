@@ -1,9 +1,9 @@
 import React from "react";
-import JobCard from "./JobCard";
-import { Jobs } from "./data";
+import JobCard from "../../../component/JobCard";
+import { Jobs } from "../../data";
 
-import Fade from "../images/Rectangle 19011 (1).png";
-function Job() {
+import Fade from "../../../images/Rectangle 19011 (1).png";
+function jobBoard() {
     return (
         <div className="section-card w-full lg:w-7/12 relative overflow-hidden">
             <h2>1,000,000+ jobs available for you</h2>
@@ -79,4 +79,4 @@ function Job() {
     );
 }
 
-export default Job;
+export default jobBoard;

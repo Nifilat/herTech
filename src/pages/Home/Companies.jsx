@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
-import { ReactComponent as Audi } from "../images/Audi.svg";
-import { ReactComponent as Netflix } from "../images/Netflix.svg";
-import { ReactComponent as Maxar } from "../images/Maxar.svg";
-import { ReactComponent as SpaceX } from "../images/SpaceX.svg";
-import { ReactComponent as Netflix2 } from "../images/netflix2.svg";
+import { ReactComponent as Audi } from "../../images/Audi.svg";
+import { ReactComponent as Netflix } from "../../images/Netflix.svg";
+import { ReactComponent as Maxar } from "../../images/Maxar.svg";
+import { ReactComponent as SpaceX } from "../../images/SpaceX.svg";
+import { ReactComponent as Netflix2 } from "../../images/netflix2.svg";
 function Companies() {
     return (
         <div className="brands py-10 flex flex-col gap-8">
